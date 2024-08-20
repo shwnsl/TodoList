@@ -13,10 +13,16 @@ function countTodo() {
     const toDoAll = document.querySelector('.toDoAll');
     const lis = ul.querySelectorAll('li');
     const done = ul.querySelectorAll("input[type='checkbox']:checked");
-    console.log(done)
+    const empty = document.querySelector(".empty");
+
     toDoIt.innerText = lis.length;
     toDoAll.innerText = lis.length;
     toDoFin.innerText = done.length;
+    if (lis.length > 0) {
+        empty.classList.add('on')
+    } else {
+        empty.classList.remove('on')
+    }
 }
 
 // 로컬에 키 값 지정 후, 배열 형태로 저장

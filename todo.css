@@ -111,6 +111,7 @@ h1 {
 .todoArea {
     width: 100%;
     overflow: auto;
+    margin-top: 30px;
 }
 
 .todos li {
@@ -228,4 +229,25 @@ input[type="checkbox"]:checked + label::after{
     background: #1E6F9F;
     border-radius: 20px;
     color: #fff;
+    margin-top: 50px;
+}
+
+.empty {
+    width: 100%;
+    overflow: hidden;
+}
+
+.empty.on {
+    display: none;
+}
+
+.empty img {
+    display: block;
+    margin: 20px auto;
+}
+
+.empty p {
+    text-align: center;
+    font-size: 16px;
+    color: #808080;
 }
