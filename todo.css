@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+button {
+    border: none;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: #0d0d0d;
+    overflow: hidden;
+    position: relative;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    background: #1a1a1a;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.inputArea {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 170px;
+}
+
+#inputText,
+[id^="modiText"] {
+    margin-right: 10px;
+    width: 80%;
+    height: 55px;
+    padding: 5px;
+    border: none;
+    background: #333333;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#insert,
+#modify {
+    width: 80px;
+    height: 55px;
+    background: #1E6F9F;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+#insert img {
+    margin-left: 5px;
+}
+
+.textArea {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding-top: 90px;
+    margin: 0 auto;
+}
+
+.textArea > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.do {
+    color: #4EA8DE;
+}
+
+.fin {
+    color: #8284FA;
+}
+
+.textArea div p {
+    padding: 5px;
+    color: #d9d9d9;
+    background: #333333;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.todoArea {
+    width: 100%;
+    overflow: auto;
+}
+
+.todos li {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #333333;
+    background: #262626;
+    color: #f2f2f2;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="checkbox"]{
+    display: none;
+  }
+input[type="checkbox"] + label{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    border:1px solid #4EA8DE;
+    border-radius: 50%;
+    margin-right: 20px;
+    position: relative;
+  }
+input[type="checkbox"]:checked + label::after{
+    content:'✔';
+    font-size: 12px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #5E60CE;
+    background: #5E60CE;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 14px;
+    position: absolute;
+    left: -2px;
+    top: -2px;
+  }
+
+.todos li span {
+    width: 90%;
+}
+
+.todos li button {
+    width: 20px;
+    height: 24px;
+    border: none;
+}
+
+.todos li button:nth-of-type(1) {
+    width: 26px;
+    background: url(./img/modi.png) center/100% no-repeat;
+    margin-right: 10px;
+}
+
+
+.todos li button:nth-of-type(2) {
+    background: url(./img/trash.png) center/100% no-repeat;
+}
+
+.todos > li > input[type='checkbox']:checked ~ span {
+    color: #666;
+    text-decoration: line-through;
+}
+
+#delAll {
+    display: block;
+    width: 20%;
+    text-align: center;
+    margin: 5px auto;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    background: rgba(255, 255, 255, .15);
+}
+
+.modal.on {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modifySection {
+    width: 60%;
+    height: auto;
+    background: #0d0d0d;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.modifySection h2 {
+    font-size: 40px;
+    color: #4EA8DE;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.modiArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#delAll {
+    width: 20%;
+    height: 55px;
+    background: #1E6F9F;
+    border-radius: 20px;
+    color: #fff;
+}
