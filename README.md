@@ -30,15 +30,11 @@ https://shwnsl.github.io/TodoList/
 
 ### 프로젝트 기여자
 
-방정배(본인) 100%
+노준희 (본인) 100%
 
 ### 기술스택
 
 `JavaScript` `HTML5` `SCSS`
-
-### 빌드 도구
-
-`parcel`
 
 ### Flow Chart
 
